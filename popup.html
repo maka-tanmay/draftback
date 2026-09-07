@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DraftBack</title><link rel="stylesheet" href="ui.css"></head>
+<body><main class="popup">
+<header class="brandbar"><img class="brandmark" src="icons/icon-64.png" alt=""><div><div class="wordmark">DraftBack</div><div class="kicker">A reload shouldn't mean a restart.</div></div></header>
+<div class="popup-body"><p class="overline">Your unfinished form</p>
+<section class="state"><span class="state-icon" aria-hidden="true"></span><div><strong id="site-state">Checking this page…</strong><span id="site-detail" class="muted"></span></div></section>
+<p class="muted">Turn on protection, then fill the form normally. No profile needed.</p>
+<div class="actions primary-actions"><button id="toggle" class="primary" type="button" disabled>Protect this site</button><button id="restore" class="primary" type="button" hidden>Restore my answers</button></div>
+<p id="status" class="status" role="status" aria-live="polite"></p>
+<p class="muted">Answers are encrypted on this device for 24 hours. Passwords, payment/security details, identity numbers, uploads and consent are not protected. Custom widgets may need manual entry.</p>
+<a href="onboarding.html" target="_blank">Try a reload-and-restore walkthrough →</a>
+<details class="recovery-details"><summary>Optional autofill tools</summary><p id="profile-summary" class="muted"></p>
+<div class="actions"><button id="fill-form" type="button" disabled>Fill from my profile</button><a class="button" href="profile.html" target="_blank">My details</a><button id="undo-fill" type="button" hidden>Undo fill</button><button id="remember-form" type="button" disabled>Collect details from this form</button></div>
+<p id="fill-status" class="status" role="status"></p></details>
+<details class="recovery-details"><summary>Privacy and settings</summary><div class="actions"><button id="delete-site" type="button" hidden>Delete site drafts</button><button id="delete-all" class="danger" type="button">Delete all data</button><button id="settings" type="button">Settings</button></div></details>
+<section id="startup-error" hidden role="alert"><p>DraftBack couldn't connect. Reload the extension on the browser's extensions page, then reload the form. Don't remove the extension: removal deletes drafts.</p><button id="retry-startup" type="button">Try again</button></section>
+</div></main><script src="shared.js"></script><script src="popup.js"></script></body></html>

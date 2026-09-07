@@ -1,0 +1,12 @@
+{
+  "name": "draftback",
+  "version": "0.7.1",
+  "private": true,
+  "description": "Local application autofill and temporary draft recovery.",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "check": "node scripts/check-package.js",
+    "package:chromium": "sh scripts/package-chromium.sh"
+  },
+  "license": "MIT"
+}

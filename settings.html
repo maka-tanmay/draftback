@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DraftBack settings</title>
+  <link rel="stylesheet" href="ui.css">
+</head>
+<body>
+  <main class="page settings">
+    <header class="page-brand"><img class="brandmark" src="icons/icon-64.png" alt=""><span class="wordmark">DraftBack</span></header>
+    <p class="overline">Preferences</p>
+    <h1>Settings</h1>
+    <p class="tagline">Your temporary drafts and website permissions.</p>
+    <section class="panel"><h2>Recover your progress</h2><p>Protect a site, fill your form normally, then restore saved answers after a reload. No profile needed.</p><div class="actions"><a class="button" href="onboarding.html">Try the recovery walkthrough</a><a class="button" href="profile.html">Optional autofill profile</a></div></section>
+
+    <section class="panel">
+      <h2>Retention and storage</h2>
+      <div class="row"><div><strong>Retention</strong><div class="muted">Fixed at 24 hours after the latest change</div></div><span>24 hours</span></div>
+      <div class="row"><div><strong>Storage used</strong><div id="record-count" class="muted">Checking…</div></div><span id="storage-used" class="metric">—</span></div>
+      <div class="actions"><button id="clear-expired" type="button">Clear expired</button><button id="clear-all" class="danger" type="button">Clear all data</button></div>
+    </section>
+
+    <section class="panel">
+      <h2>In-page state</h2>
+      <label class="toggle"><input id="indicator-enabled" type="checkbox"><span><strong>Show protection indicator</strong><span class="muted">Recovery prompts still appear when saved writing is at risk.</span></span></label>
+      <div class="row"><div><strong>Keyboard shortcut</strong><div class="muted">No shortcut is assigned in this MVP.</div></div><span>Not assigned</span></div>
+    </section>
+
+    <section class="panel">
+      <h2>Allowed websites</h2>
+      <p class="muted">Removing a website stops future capture immediately. Saved drafts remain until expiry or deletion.</p>
+      <div id="sites" aria-live="polite"></div>
+    </section>
+
+    <section class="panel">
+      <h2>Privacy</h2>
+      <p>DraftBack has no server, account, analytics, advertisements, or network requests. Draft text is encrypted locally where Web Crypto and IndexedDB are available.</p>
+      <a class="button" href="privacy.html">Read the privacy explanation</a>
+    </section>
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+  </main>
+  <script src="shared.js"></script>
+  <script src="settings.js"></script>
+</body>
+</html>

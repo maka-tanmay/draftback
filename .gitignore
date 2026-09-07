@@ -1,0 +1,7 @@
+.DS_Store
+dist/
+Safari/DerivedData/
+Safari/build/
+*.xcuserstate
+xcuserdata/
+tests/browser-results/

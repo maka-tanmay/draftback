@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "DraftBack",
+  "version": "0.7.1",
+  "description": "Recover unfinished form answers after a reload. Temporary encrypted drafts, on websites you choose.",
+  "minimum_chrome_version": "120",
+  "permissions": ["activeTab", "storage", "scripting"],
+  "optional_host_permissions": ["http://*/*", "https://*/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "action": {
+    "default_title": "DraftBack",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png"
+    }
+  },
+  "options_page": "settings.html"
+}

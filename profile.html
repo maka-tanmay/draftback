@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Your DraftBack profile</title><link rel="stylesheet" href="ui.css"></head>
+<body><main class="page">
+  <header class="page-brand"><img class="brandmark" src="icons/icon-64.png" alt=""><span class="wordmark">DraftBack</span></header>
+  <p class="overline">Set up once. Type less next time.</p><h1>Your details.</h1>
+  <p class="tagline">Start with the basics below. Leave anything blank—you can add more later. Save, then open DraftBack on an application and choose “Fill this form.”</p>
+  <p id="import-status" class="status" role="status"></p>
+  <form id="profile-form"><div id="profile-fields" class="profile-grid"></div>
+    <div class="actions"><button class="primary" type="submit">Save profile</button><button id="delete-profile" class="danger" type="button">Delete profile</button><a class="button" href="settings.html">Settings</a></div>
+  </form>
+  <p id="profile-status" class="status" role="status" aria-live="polite"></p>
+  <p class="muted">Stored encrypted on this device until you delete it. Filling shares the chosen values with that website. Passwords, payment details and government ID numbers are excluded.</p>
+</main><script src="autofill.js"></script><script src="profile.js"></script></body></html>
